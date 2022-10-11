@@ -1,0 +1,1 @@
+#zaklady js na 1 strance
