@@ -34,7 +34,14 @@
             </p>
           </blockquote>
           <div class="bg-info p-3">
-            <p>Zde bude řešení.</p>
+            <p>JavaScript je multiplatformní, objektově orientovaný, událostmi řízený skriptovací jazyk.</p>
+            <p>Používá se k:</p>
+            <ul>
+              <li>Tvorbě a úprav webových stránek a aplikací <a href="https://web.vavyskov.cz/javascript.html">Příklad</a></li>
+              <li>Tvorbě a správu serverů (serverové aplikace jedoucí v reálném čase)</li>
+              <li>Vytváření rozšíření k některým aplikacím (Adobe Acrobat)</li>
+            </ul>
+            <p>Další příklady: <a href="https://www.jakpsatweb.cz/javascript/priklady/index.html">Příklad</a>, <a href="http://www.garth.cz/zaklady-javascriptu/">Příklad</a></p>
           </div>
         </div>
         <div class="col-sm-6 bg-secondary text-light p-5">
@@ -44,7 +51,14 @@
             <p class="text-warning">Použij angličtinu!</p>
           </blockquote>
           <div class="bg-info p-3">
-            <p>Zde bude řešení.  </p>
+            <p>Principles of writing in JavaScript:</p>
+            <ol>
+              <li>Commands are separated by a semicolon or a line break</li>
+              <li>It depends on the case of the letters (camelcase)</li>
+              <li>Strings are enclosed in quotation marks</li>
+              <li>Program sequences are enclosed in braces {}</li>
+              <li>JavaScript knows a special value for true: true and for false: false.</li>
+            </ol>
           </div>
         </div>
       </div>
@@ -84,12 +98,12 @@
             <code>
               let x = 0; // s přiřazením hodnoty<br />
               let x; // bez přiřazení hodnoty<br />
-              let x = null; // ...<br />
-              ... // celé číslo (typ number)<br />
-              ... // reálné číslo (typ number)<br />
-              ... // zápis desetinného čísla pomocí exponentu<br />
-              ... // typ string<br />
-              let prestupny = false // ...<br />
+              let x = null; // prázdná proměnná<br />
+              let x = 999999999999999;  // celé číslo (typ number)<br />
+              let x = 3.14 // reálné číslo (typ number)<br />
+              let y = 123e-5; // zápis desetinného čísla pomocí exponentu<br />
+              let x = 'nějaký text'; // typ string<br />
+              let prestupny = false // proměnná nepravda (boolean - true/false)<br />
             </code>
           </div>
         </div>
@@ -114,23 +128,23 @@
             </code>
             <h4>Přiřazovací</h4>
             <code>
-              ...
+              =, +=, *=, %=, -=, /=
             </code>
             <h4>Logické</h4>
             <code>
-              ...
+              &&, ||, !
             </code>
             <h4>Porovnávací</h4>
             <code>
-              ...
+              ==, !=, >=, <=, >, <
             </code>
             <h4>Bitové</h4>
             <code>
-              ...
+              &, |, ^
             </code>
             <h4>Typové</h4>
             <code>
-              typeof (typ proměnné), instanceof (...)
+              typeof (typ proměnné), instanceof (ke kontrole typu - vrací true/false)
             </code>
           </div>
         </div>
@@ -155,17 +169,17 @@
             <h4>prompt()</h4>
             <code>
               /* Do proměnné password vloží heslo zadané uživatelem */<br />
-              ...
+              let cislo = prompt('Zadej heslo');
             </code>
             <h4>confirm()</h4>
             <code>
-              /* ... */<br />
+              /* pokud confirm tak prejde na stranky https://seznam.cz */<br />
               if (confirm('Chceš přejít na stránky Seznam.cz?'))
               location.href='https://seznam.cz';
             </code>
             <hr />
             <p class="alert alert-primary" role="alert">
-              Varování:
+              Varování: Můžou zde vyskočit reklamy. Můžou vést na nechtěné stránky. Mohou obsahovat odkaz na stažení nechtěných souborů např: programy, viry.
             </p>
           </div>
         </div>
@@ -198,11 +212,11 @@
             <p>Zde bude řešení.</p>
           </div>
           <script>
-            let jmeno = 'Marek';
-            let prijmeni = 'Lučný';
+            let jmeno = 'Petr';
+            let prijmeni = 'Novák';
             sedmy.innerHTML = '<p>' + jmeno + ' ' + prijmeni + '</p>';
             let vaha = 100;
-            let vyska = 188;
+            let vyska = 250;
             sedmy.innerHTML += `<p>Váha je ${vaha} kg, výška ${vyska} cm</p>`;
             sedmy.innerHTML += '<blockquote>Motto: \'Jíme, abychom žili, nežijeme, abychom jedli.\'</blockquote>';
           </script>
@@ -375,7 +389,8 @@
               Vytvořte v JS funkci, která zjistí, zda náhodně zadané číslo je prvočíslem:
             </p>
           </blockquote>
-          <div class="bg-info p-3" id="dvanacty">            
+          <div class="bg-info p-3" id="dvanacty">   
+            <p>Klikni zde:</p>         
           </div>
           <script>
             function prvocislo(cislo){
